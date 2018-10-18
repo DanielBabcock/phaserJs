@@ -17,14 +17,15 @@ function addItems() {
   items = game.add.physicsGroup();
   createItem(400, 400, 'coin');
   createItem(300, 300, 'coin');
-  createItem(200, 200, 'coin');
-  createItem(100, 100, 'coin');
+  createItem(200, 200, 'poison');
+  createItem(100, 100, 'star');
+//   createItem(50, 50, 'star');
   createItem(600, 525, 'coin');
   createItem(400, 500, 'coin');
   createItem(500, 400, 'coin');
   createItem(500, 300, 'coin');
   createItem(550, 150, 'coin');
-  createItem(450, 50, 'coin');
+  createItem(450, 50, 'poison');
 }
 
 // add platforms to the game
@@ -83,6 +84,8 @@ window.onload = function () {
     game.load.spritesheet('player', 'chalkers.png', 48, 62);
     game.load.spritesheet('coin', 'coin.png', 36, 44);
     game.load.spritesheet('badge', 'badge.png', 42, 54);
+    game.load.spritesheet('poison', 'poison.png', 32, 32);
+    game.load.spritesheet('star', 'star.png', 32, 32);
   }
 
   // initial game set up
